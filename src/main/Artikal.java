@@ -62,20 +62,21 @@ public class Artikal extends JFrame {
 	 * Create the frame.
 	 */
 	public Artikal() {
+		setTitle("FORMA ZA ARTIKAL");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 393);
+		setBounds(100, 100, 598, 393);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
 		tfIme = new JTextField();
-		tfIme.setBounds(139, 46, 86, 20);
+		tfIme.setBounds(139, 46, 194, 20);
 		contentPane.add(tfIme);
 		tfIme.setColumns(10);
 
 		tfBarkod = new JTextField();
-		tfBarkod.setBounds(139, 77, 86, 20);
+		tfBarkod.setBounds(139, 77, 194, 20);
 		contentPane.add(tfBarkod);
 		tfBarkod.setColumns(10);
 
@@ -94,7 +95,7 @@ public class Artikal extends JFrame {
 
 			}
 		});
-		cbTipArtikla.setBounds(139, 123, 163, 20);
+		cbTipArtikla.setBounds(139, 123, 194, 20);
 		contentPane.add(cbTipArtikla);
 
 		JButton btnDodaj = new JButton("Dodaj Artikal");
@@ -124,11 +125,11 @@ public class Artikal extends JFrame {
 				}
 			}
 		});
-		btnDodaj.setBounds(31, 307, 115, 23);
+		btnDodaj.setBounds(41, 307, 125, 23);
 		contentPane.add(btnDodaj);
 
 		tfSifra = new JTextField();
-		tfSifra.setBounds(139, 11, 86, 20);
+		tfSifra.setBounds(139, 11, 194, 20);
 		contentPane.add(tfSifra);
 		tfSifra.setColumns(10);
 
@@ -145,7 +146,7 @@ public class Artikal extends JFrame {
 		contentPane.add(lblBarkod);
 
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(31, 186, 377, 105);
+		scrollPane.setBounds(31, 186, 521, 105);
 		contentPane.add(scrollPane);
 
 		table = new JTable(dtm);
@@ -181,11 +182,11 @@ public class Artikal extends JFrame {
 						
 			}
 		});
-		btnizmeni.setBounds(168, 307, 89, 23);
+		btnizmeni.setBounds(228, 307, 125, 23);
 		contentPane.add(btnizmeni);
 		
 		btnBrisi = new JButton("Brisi");
-		btnBrisi.setBounds(281, 307, 89, 23);
+		btnBrisi.setBounds(427, 307, 125, 23);
 		contentPane.add(btnBrisi);
 		Object[] kolone = new Object[6];
 		// {"IdArtikla","Naziv","Sifra","BarKod","IdTip"}
